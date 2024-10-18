@@ -29,3 +29,7 @@ jobs:
         name: Run tests
       - run: npm run mutate
         name: Run mutation testing tool
+      - uses: actions/upload-artifact@v4
+        name: Typescript Report
+        path: reports/mutation/mutation.html
+        overwrite: true
