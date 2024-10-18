@@ -30,6 +30,8 @@ jobs:
       - run: npm run mutate
         name: Run mutation testing tool
       - uses: actions/upload-artifact@v4
-        name: Typescript Report
-        path: reports/mutation/mutation.html
-        overwrite: true
+        name: Upload Typescript Report
+        with:
+          name: typescript-report
+          path: reports/mutation/mutation.html
+          overwrite: true
