@@ -33,5 +33,5 @@ jobs:
         name: Upload Typescript Report
         with:
           name: typescript-report
-          path: reports/mutation/mutation.html
+          path: typescript/reports/mutation/mutation.html
           overwrite: true
