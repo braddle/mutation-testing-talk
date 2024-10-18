@@ -35,3 +35,4 @@ jobs:
           name: typescript-report
           path: typescript/reports/mutation/mutation.html
           overwrite: true
+          compression-level: 0
